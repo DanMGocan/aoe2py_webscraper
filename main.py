@@ -47,14 +47,6 @@ list_of_lists = requests.get("https://ageofempires.fandom.com/wiki/Category:List
 list_of_lists_bs = BeautifulSoup(list_of_lists.content, "html.parser")
 
 
-#with open('all_units.html', 'w', 1, "utf-8") as f:
- #   try:
-  #      f.write(str(table))
-   #     print("File successfully written")
-    #except:
-     #   print(error)
-
-
 def data_extractor(link):
 
     # Creating the request and the BS object
